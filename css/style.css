@@ -1,0 +1,309 @@
+/* RESET ♡  */
+
+/*dicas pra eu nao esquecer : 
+
+Tag            Fator (Razão)  Valor em rem   Valor em px (≈)
+Texto do Corpo     1              1rem           16px
+<h3>               1.200          1.2rem         19.2px
+<h2>               1.440          1.44rem        23.0px
+<h1>               1.728          1.73rem        27.6px
+  
+aumentar sempre 1px do font-size do html na media query dos dispositivos
+
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+/* --------------- 🕊️ -------------- */
+
+/* CONFIG. DAS FONTES ♡  */
+
+/* fonte dos titulos ♡  */
+
+@font-face {
+    font-family: 'cormorant titles';
+    src: url(fonts/cormorant-g.ttf) format(truetype);
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* versao italica  */
+
+@font-face {
+    font-family: 'cormorant titles';
+    src: url(fonts/cormorant-g-italic.ttf) format(truetype);
+    font-weight: 100 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* --- 🕊️  */
+
+/* fonte dos textos ♡  */
+
+@font-face {
+    font-family: 'roboto body';
+    src: url(fonts/roboto.ttf) format(truetype);
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* versao italica ♡  */
+
+@font-face {
+    font-family: 'roboto body';
+    src: url(fonts/roboto-italic.ttf) format(truetype);
+    font-weight: 100 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* ---------- 🕊️ ---------- */
+
+/* ROOT ♡  */
+
+/* root de fontes ♡  */
+
+:root {
+    --fonte-titulo: 'cormorant titles', serif;
+    --fonte-corpo: 'roboto body', sans-serif;
+}
+
+/* root de cores ♡  */
+
+:root {
+    --fundo-body: '#F0F0F0';
+    --cor-corpo: '#737373';
+    --cor-titulo: '#4D4D4D';
+    --outros: '#B3B3B3';
+}
+
+/* ---------- 🕊️ ----------  */
+
+/* body e configs gerais ♡  */
+
+body {
+    background-color: #e9edeee3;
+    font-family: var(--fonte-corpo);
+    color: var(--cor-corpo);
+    margin: 0;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--cor-titulo);
+    font-family: var(--fonte-titulo);
+}
+
+
+/* ---------- 🕊️ ----------  */
+
+/* topo  */
+.nuvens-borda {
+    width: 100%;
+}
+
+header {
+    margin: 5%;
+    padding: 1.5%;
+}
+
+nav ul {
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4.9%;
+    list-style-type: none;
+    text-shadow: rgb(209, 209, 209) 1px 3px 2px;
+}
+
+
+/* imagem rocketseat (config rapida) */
+#rocketseat {
+    width: 100px;
+}
+
+/* ------  */
+
+/* PAINEL DE APRESENTACAO / TELA INICIAL / HERO  */
+
+.nuvem-intro {
+    text-align: justify;
+    margin-top: 19%;
+}
+
+.intro-texto {
+    background-color: white;
+    padding: 6%;
+    border-radius: 15px 0;
+    border: 2px solid #d3d3d3e3;
+}
+
+.intro-texto #texto1 {
+    font-size: 1.4rem;
+    font-family: var(--fonte-titulo);
+    font-weight: bold;
+}
+
+.curriculo {
+    margin: 5% 0;
+    padding: 2%;
+    text-align: center;
+}
+
+
+
+/* --- */
+
+button {
+    width: 30%;
+    padding: 2.7%;
+    margin-top: 8%;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    box-shadow: rgb(167, 167, 167) 0px 0px 6px;
+}
+
+/* ---------- 🕊️ ----------  */
+
+/* SKILLS  */
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20%;
+}
+
+/* lembrar de fazer o negocio q vai dividir as secoes (a asa la)  */
+
+.skills h1 {
+    text-align: center;
+    padding: 5%;
+    font-size: 2rem;
+}
+
+.skills img {
+    width: 100%;
+}
+
+.skills-demo {
+    border: 2px solid #d3d3d3e3;
+    background-image: url(https://i.pinimg.com/736x/24/e2/c1/24e2c17567a995cabd65ea5a31b57ebf.jpg);
+    background-size: cover;
+    border-radius: 12px;
+    padding: 7.8%;
+    margin: 12px 0 30px 0;
+}
+
+.skills-demo h2 {
+    text-align: center;
+    padding: 2.2%;
+}
+
+
+.skills-demo p {
+    text-align: justify;
+    padding: 1.2%;
+}
+
+.tecnologias-icon h3 {
+    padding: 2%;
+}
+
+.tecnologias-icon img {
+    width: 10%;
+}
+
+/* ---------- 🕊️ ----------  */
+
+/* PROJETOS  */
+
+.projetos h1,
+h2 {
+    text-align: center;
+    padding: 5%;
+    font-size: 2rem;
+}
+
+.projetos-demo {
+    border: 2px solid #d3d3d3e3;
+    background-color: white;
+    border-radius: 12px;
+    padding: 2%;
+    margin: 12px 0 30px 0;
+}
+
+.projeto {
+    margin: 3%;
+}
+
+.projeto p {
+    text-align: justify;
+    padding: 1.2%;
+}
+
+.projeto a {
+    color: grey;
+}
+
+.projeto .imagem-projeto {
+    width: 100%;
+    margin-bottom: 1.2%;
+    border-radius: 3px;
+    padding: 1%;
+}
+
+
+/* ---------- 🕊️ ----------  */
+
+/* nuvem footer  */
+
+.nuvem-footer img {
+    rotate: calc(180deg);
+}
+
+/* ---------- 🕊️ ----------  */
+
+/* FOOTER (lembrar de mexer no gap dos links) */ 
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+footer h2 {
+    padding: 2%;
+}
+
+.links {
+    padding: 7%;
+    margin: auto;
+    font-size: 1rem;
+}
+
+.links ul a {
+    color: black;
+    text-decoration: none;
+}
+
+.links ul {
+    display: flex;
+    list-style: none;
+    gap: 5%;
+}
