@@ -30,21 +30,13 @@ html {
 /* fonte dos titulos ♡  */
 
 @font-face {
-    font-family: 'cormorant titles';
-    src: url(fonts/cormorant-g.ttf) format(truetype);
-    font-weight: 100 900;
-    font-style: normal;
-    font-display: swap;
+    font-family: 'malibu';
+    src: url(../fonts/malibu.ttf) format(truetype);
 }
 
-/* versao italica  */
-
 @font-face {
-    font-family: 'cormorant titles';
-    src: url(fonts/cormorant-g-italic.ttf) format(truetype);
-    font-weight: 100 900;
-    font-style: italic;
-    font-display: swap;
+    font-family: 'mouldy';
+    src: url(../fonts/mouldy.ttf);
 }
 
 /* --- 🕊️  */
@@ -76,7 +68,7 @@ html {
 /* root de fontes ♡  */
 
 :root {
-    --fonte-titulo: 'cormorant titles', serif;
+    --fonte-titulo: 'malibu', sans-serif;
     --fonte-corpo: 'roboto body', sans-serif;
 }
 
@@ -100,13 +92,23 @@ body {
     margin: 0;
 }
 
+a:hover {
+    cursor: pointer;
+}
+
 h1,
-h2,
-h3 {
+h2 {
+    text-align: center;
     color: var(--cor-titulo);
+    letter-spacing: 0.3rem;
     font-family: var(--fonte-titulo);
 }
 
+h3 {
+    font-family: 'mouldy';
+    font-size: 0.9em;
+    letter-spacing: 0.1rem;
+}
 
 /* ---------- 🕊️ ----------  */
 
@@ -141,30 +143,22 @@ nav ul {
 /* PAINEL DE APRESENTACAO / TELA INICIAL / HERO  */
 
 .nuvem-intro {
-    text-align: justify;
-    margin-top: 19%;
+    margin-top: 5em;
+    margin-bottom: 5em;
+    padding: 0.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.intro-texto {
-    background-color: white;
-    padding: 6%;
-    border-radius: 15px 0;
-    border: 2px solid #d3d3d3e3;
+.nuvem-intro img {
+    width: 100%;
 }
 
-.intro-texto #texto1 {
-    font-size: 1.4rem;
-    font-family: var(--fonte-titulo);
-    font-weight: bold;
+.nuvem-intro span {
+    font-size: 0.9rem;
 }
-
-.curriculo {
-    margin: 5% 0;
-    padding: 2%;
-    text-align: center;
-}
-
-
 
 /* --- */
 
@@ -178,9 +172,14 @@ button {
     box-shadow: rgb(167, 167, 167) 0px 0px 6px;
 }
 
+button:hover {
+    cursor: pointer;
+}
+
 /* ---------- 🕊️ ----------  */
 
 /* SKILLS  */
+
 
 .skills {
     display: flex;
@@ -193,7 +192,7 @@ button {
 .skills h1 {
     text-align: center;
     padding: 5%;
-    font-size: 2rem;
+
 }
 
 .skills img {
