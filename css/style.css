@@ -83,7 +83,7 @@ html {
 
 /* ---------- 🕊️ ----------  */
 
-/* body e configs gerais ♡  */
+/* ! body e configs gerais ♡  */
 
 body {
     background-color: #e9edeee3;
@@ -96,6 +96,13 @@ a:hover {
     cursor: pointer;
 }
 
+h1 {
+    color: white !important;
+    text-shadow: black 3px 2px 10px;
+    font-size: 1.7em;
+    letter-spacing: 0.4em !important;
+}
+
 h1,
 h2 {
     text-align: center;
@@ -104,13 +111,18 @@ h2 {
     font-family: var(--fonte-titulo);
 }
 
+h2 {
+    color: rgb(0, 0, 0);
+    font-size: 1.5em !important;
+}
+
 h3 {
     font-family: 'mouldy';
     font-size: 0.9em;
     letter-spacing: 0.1rem;
 }
 
-/* ---------- 🕊️ ----------  */
+/*  ! ----------  */
 
 /* topo  */
 .nuvens-borda {
@@ -142,9 +154,13 @@ nav ul {
 
 /* PAINEL DE APRESENTACAO / TELA INICIAL / HERO  */
 
+#nomezinho {
+    position: absolute;
+}
+
 .nuvem-intro {
     margin-top: 5em;
-    margin-bottom: 5em;
+    margin-bottom: 10em;
     padding: 0.5em;
     display: flex;
     flex-direction: column;
@@ -180,20 +196,20 @@ button:hover {
 
 /* SKILLS  */
 
+#servicos_titulo {
+    margin: 0 auto;
+    width: 100%;
+    padding: 0;
+}
 
 .skills {
     display: flex;
     flex-direction: column;
-    margin-top: 20%;
 }
 
 /* lembrar de fazer o negocio q vai dividir as secoes (a asa la)  */
 
-.skills h1 {
-    text-align: center;
-    padding: 5%;
 
-}
 
 .skills img {
     width: 100%;
