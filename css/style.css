@@ -2,7 +2,7 @@
 
 /*dicas pra eu nao esquecer : 
 
-Tag            Fator (Razão)  Valor em rem   Valor em px (≈)
+Tag            Fator (Razão)  valor em rem   valor em px (≈)
 Texto do Corpo     1              1rem           16px
 <h3>               1.200          1.2rem         19.2px
 <h2>               1.440          1.44rem        23.0px
@@ -85,7 +85,7 @@ html {
 /* ! body e configs gerais ♡  */
 
 body {
-    background-color: #cecece9d;
+    background-color: #e8e8e8;
     font-family: var(--fonte-corpo);
     color: var(--cor-corpo);
     margin: 0;
@@ -97,9 +97,10 @@ a:hover {
 
 h1 {
     color: rgb(0, 0, 0) !important;
-     text-shadow: rgb(255, 255, 255) 10px 5px 8px;
-    font-size: 2em;
+    text-shadow: rgb(255, 255, 255) 10px 5px 8px;
+    font-size: 1.7rem;
     letter-spacing: 0.4em !important;
+    
 }
 
 h1,
@@ -117,9 +118,9 @@ h2 {
 }
 
 h3 {
-    font-family: 'mouldy';
-    font-size: 0.9em;
-    letter-spacing: 0.1rem;
+    font-family: var(--fonte-corpo);
+    font-size: 1.1rem;
+    font-weight: 700;
 }
 
 /*  ! ----------  */
@@ -129,28 +130,8 @@ h3 {
     width: 100%;
 }
 
-header {
-    margin: 5%;
-    padding: 1.5%;
-}
-
-nav ul {
-    font-size: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 4.9%;
-    list-style-type: none;
-    text-shadow: rgb(209, 209, 209) 1px 3px 2px;
-}
-
-#subtitulo {
-    padding: 1em;
-}
-
-.hero_sub {
-    font-size: 0.7em;
-    padding: 1.6rem;
+#down {
+    display: none;
 }
 
 /* ------  */
@@ -210,9 +191,6 @@ button:hover {
     flex-direction: column;
 }
 
-/* lembrar de fazer o negocio q vai dividir as secoes (a asa la)  */
-
-
 
 .skills img {
     width: 100%;
@@ -234,16 +212,17 @@ button:hover {
 
 
 .skills-demo p {
+    font-size: 1rem;
     text-align: justify;
     padding: 1.2%;
 }
 
 .tecnologias-icon h3 {
-    padding: 2%;
+    padding: 3% 0.9%;
 }
 
 .tecnologias-icon img {
-    width: 10%;
+    width: 9%;
 }
 
 /* ---------- 🕊️ ----------  */
@@ -277,6 +256,7 @@ h2 {
 }
 
 .projeto p {
+    font-size: 1rem;
     text-align: justify;
     padding: 1.2%;
 }
@@ -303,10 +283,8 @@ h2 {
 
 /* ---------- 🕊️ ----------  */
 
-/* FOOTER (lembrar de mexer no gap dos links) */ 
-
 footer {
-    padding: 2em;
+    padding: 1em;
     display: flex;
     flex-direction: column;
     background-color: rgb(255, 255, 255);
@@ -331,19 +309,23 @@ footer h2 {
     color: #757575;
 }
 
+#copy_icon img {
+    width: 5%;
+    vertical-align: middle;
+}
+
 .links {
     padding: 7%;
-    margin: auto;
     font-size: 1rem;
 }
 
 .links ul a {
+    font-size: 0.9rem;
     color: black;
-    text-decoration: none;
 }
 
 .links ul {
     display: flex;
     list-style: none;
-    gap: 5%;
+    gap: 20%;
 }

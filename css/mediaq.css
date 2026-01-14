@@ -46,6 +46,11 @@
         margin: 4.6% 0;
     }
 
+    #down {
+        display: block;
+        width: 10%;
+        margin-top: 10%;
+    }
 
     /* --------------- 🕊️ -------------- */
 
@@ -97,6 +102,10 @@
         margin: auto;
     }
 
+    .tecnologias-icon img {
+        width: 8%;
+    }
+
     /* footer  */
 
     footer {
@@ -111,11 +120,16 @@
         margin-top: 0;
     }
 
+    #copy_icon img {
+        width: 1.1%;
+    }
+
     .links ul {
         margin-top: 0;
         display: flex;
         justify-content: center;
         text-align: center;
+        gap: 5%;
     }
 
     .links {
